@@ -1,0 +1,196 @@
+
+<!-- Set Up -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>NYC Analysis Tools Used</title>
+
+    <!-- Importing Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<!-- Importing the other links -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Importing the link to CSS File -->
+	<link href="../static/style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+
+  <body>
+	<!-- Create the Nav Bar -->
+    <nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		
+		<label class="logo"><a class="logoactive" href="index.html">The NYC Property Sales</a></label>
+		<ul>
+			<li><a class="active" href="NYC.html">NYC Property Analysis</a></li>
+			<li><a class="active" href="nyc_corona.html">2020 Analysis</a></li>
+			<li><a class="active" href="tvt.html">Machine Learning Analysis</a></li>
+			<li><a class="active" href="tools.html">Tools Used</a></li>
+			<!--<li><a class="active" href="about.html">About Us</a></li> -->
+		</ul>
+	</nav>
+	<div class="container-fluid about">
+		<!-- Team Members -->
+		<!--<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8 about-title">
+				<h3>Team Members</h3>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<div id="search-description">
+					<p class="about-contents">The team members are: Fareedah Sabree Pete, Erendiz Tarakci, Jordon, and Tom Recht.</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div> -->
+	
+		<!-- Coding Approach -->
+		<!--<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8 about-title">
+				<h3>Coding Approach</h3>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<div id="search-description">
+					<p class="about-contents">
+						We used pandas via jupyter notebook to export the data from 
+						a Kaggle database (listed below).</a>
+						After cleaning the data we stored it in a MongoDB database. This database was then accessed using Flask, which 
+						was also used to host the data visualization website. The data was visualized on the website using a combination
+						of javascript libraries.
+						<ul class="about-contents">
+							<li> <b>Import data:</b> jupyter notebook & Pandas </li>
+							<li> <b>Export cleaned data:</b> MongoDB </li>
+							<li> <b>Create API and Host Web Page:</b> Flask (used to extract data from MongoDB) </li>
+							<li> <b>Visualize Data:</b>  </li>
+						  </ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div> -->
+	
+		<!-- Data -->
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8 about-title">
+				<h3>Data</h3>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<div id="search-description">
+					<p >
+						<ul>
+							<li class="about-contents"><a href="https://www1.nyc.gov/site/finance/taxes/property-rolling-sales-data.page" target=”_blank”>
+								NYC Department of Finance Rolling Sales Data 2016-Jun 2020</a></li>
+						  </ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	<!--
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<div id="search-description">
+					<h5> Data Cleaning</h5>
+					<p class="about-contents"> Several steps were taken to clean the data with Pandas inside the jupyter notebook. 
+						The main methods were:
+						<ul class="about-contents">
+							<li>Renaming the columns to make them easier to query the data.</li>
+							<li>Removing data that was not needed from each dataset.</li>
+							<li>Updating the data types where needed.</li>
+							<li>Removing erroroneous data (i.e. age with string values).</li>
+							<li>Replacing null values with 0 for numbers, and 'Unknown' for string values.</li>
+						  </ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div> -->
+	
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8 about-title">
+				<h3>Visualization</h3>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	
+		<div class="row">
+			<div class="col-2"></div>
+			<div>
+				<h4 id="about-title">Libraries and Tools Used:</h4>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-3">
+				<img src="../static/img/tableau.jpg" class="img-responsive img-rounded" alt="Tableau" style="max-width:75%;">
+			</div>
+			<div class="col-3">
+				<img src="../static/img/aws.png" class="img-responsive img-rounded" alt="AWS" style="max-width:75%;">
+			</div>
+			<div class="col-3">
+				<img src="../static/img/jupyter.jpg" class="img-responsive img-rounded" alt="Jupyter" style="max-width:35%;">
+			</div>
+			
+			<div class="col-1"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-3">
+				<img src="static/images/axios_logo.png" class="img-responsive img-rounded" alt="Axios" style="max-width:75%;">
+			</div>
+			<div class="col-3">
+				<img src="static/images/jquery-logo.png" class="img-responsive img-rounded" alt="JQuery" style="max-width:40%;">
+			</div>
+			<div class="col-3">
+				<img src="static/images/Jupyter_logo.svg.png" class="img-responsive img-rounded" alt="Jupyter Notebook" style="max-width:35%;">
+			</div>
+	
+			<div class="col-1"></div>
+		</div>
+	
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<!-- Bootstrap -->
+	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	</body>
+	</html>
+	
