@@ -250,3 +250,17 @@ p, h2 {
   outline-style: initial;
   
 }
+/* Tools Page*/
+.about {
+    color: black;
+    font-family: "Arial Black", Gadget, sans-serif !important;
+}
+
+.about-title {
+    padding: 20px;
+    padding-left: 0px !important;
+}
+
+.about-contents {
+    font-family: Tahoma, Geneva, sans-serif !important;
+}
