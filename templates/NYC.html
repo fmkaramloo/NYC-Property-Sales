@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New York Real Estate Market</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<!-- Importing the other links -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Importing the link to CSS File -->
+	<link href="../static/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		
+		<label class="logo"><a class="logoactive" href="index.html">The NYC Property Sales</a></label>
+		<ul>
+			<li><a class="active" href="NYC.html">NYC REAL ESTATE</a></li>
+			<!-- <li><a class="active" href="/2019RadialBarChart/index.html">2019RadialBarChart</a></li> -->
+			<!-- <li><a class="active" href="tvt.html">Mengyi</a></li> -->
+			<!-- <li><a class="active" href="stats.html">Kay</a></li> -->
+			<!-- <li><a class="active" href="about.html">About Us</a></li> -->
+		</ul>
+	</nav>
+
+  <h2><strong>Introduction</strong></h2>
+  <p> How many properties are sold in NYC every year?
+    Which types of properties are mostly sold? To answer these questions, this project is going to
+    analyze and visualize the data of the sold properties in New York City during a certain time period.
+  </p>
+  <br>
+ 
+  <div class='tableauPlaceholder' id='viz1597180181456' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;GrowthPrice&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='NewYorkPropertiesSale&#47;GrowthPrice' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;GrowthPrice&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' />
+      <param name='filter' value='publish=yes' /></object></div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1597180181456');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '800px';
+      vizElement.style.height = '627px';
+    } else if (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <div class='tableauPlaceholder' id='viz1597183251818' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;TotalSalesPrices&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='NewYorkPropertiesSale&#47;TotalSalesPrices' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;TotalSalesPrices&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' /></object></div>
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1597183251818');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '800px';
+      vizElement.style.height = '627px';
+    } else if (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  <div class='tableauPlaceholder' id='viz1597183336158' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;AvgPC&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='NewYorkPropertiesSale&#47;AvgPC' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;AvgPC&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' /></object></div>
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1597183336158');
+    var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else if
+      (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; }
+    else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <div class='tableauPlaceholder' id='viz1597183395126' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;MedianSalePropertyPrice&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='NewYorkPropertiesSale&#47;MedianSalePropertyPrice' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;MedianSalePropertyPrice&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' /></object></div>
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1597183395126');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '800px';
+      vizElement.style.height = '627px';
+    } else if (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <div class='tableauPlaceholder' id='viz1597183588752' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;TotalPriceCountProperties&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='NewYorkPropertiesSale&#47;TotalPriceCountProperties' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;TotalPriceCountProperties&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' /></object></div>
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1597183588752');
+    var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else if
+      (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <div class='tableauPlaceholder' id='viz1597183445066' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;PertTotalSalePrice&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='NewYorkPropertiesSale&#47;PertTotalSalePrice' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;PertTotalSalePrice&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' /></object></div>
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1597183445066');
+    var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <div class='tableauPlaceholder' id='viz1597183488710' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;PerctTotalCounts&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='NewYorkPropertiesSale&#47;PerctTotalCounts' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewYorkPropertiesSale&#47;PerctTotalCounts&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' /></object></div>
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1597183488710');
+    var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else if
+      (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '627px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  <br>
+  <br>
+  <h2><Strong>Findings</Strong></h2>
+  <p>First, in general, most sold properties were for living purposes. 
+    Second, by looking at the above charts, unlike some industries that have clear seasonal variations (i.e. farming, Halloween
+    retailers), I found that the real estate industry doesn’t have such a pattern. If you see the total sales property sales amount and the number of sales charts , no month always stayed on a peak or a valley. That means the trading volume wasn’t affected by seasons or
+    months. It was constantly changing. 
+  </p>
+
+</body>
+
+</html>

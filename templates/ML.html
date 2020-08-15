@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>New York City Home Sales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style1.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">New York City Home Sales January 2016 to June 2020.
+            <!-- <img class="nav-ufo" src="static/images/ufo.svg"> -->
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1> Machine Learning Models</h1>
+      <p>Statistics</p>
+    </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="NHS">
+      <h6> 1.Loading libraries and Dataset</h6>
+      <p2>Our data contains 317207 rows × 19 columns that were provided from two different sources. There were so many Nan and null cells that needed to be recoginzed and get cleaned.
+      </p2>
+      <h6> 2.Data Inspection & Visualization</h6>
+      <br>
+      
+      <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="title">Missing Values</h3>
+            <h3 class="text-center">(Land & Gross Square Feet, Sale Price, Total Units, Residential Unit)</h3>     
+				      <a class="float-left">
+               <img src="static/images/missing_values.png"> 
+              </a> 
+          </div>
+          <div class="col-6 col-md-6">
+            <h5 class="title">Count of available data in percent</h5>     
+				      <a class="rounded float-right">
+                <img src="static/images/Count_of_available_data_in_percent.png">
+              </a> 
+        </div>
+        <div class="row">
+          <div class="col-lg-12">Pearson Correlation of Features</div>
+            <a class="center">
+              <img src="static/images/Correlation_of_features.png">
+            </a>             
+          </div>
+        </div>        
+        <div class="row">
+          <div class="col-6">Year Built- Boxplot</div>
+            <a class="center">
+              <img src="static/images/Boxplot_of_Sale_Price_limited.png">
+            </a> 
+          <div class="col-6">Year Built- Count</div>
+          <a class="center">
+            <img src="static/images/Year_Built_count.png">
+          </a> 
+          <div class="col-6">Sale Price- Boxplot</div>
+          <a class="center">
+            <img src="static/images/Boxplot_of_Sale_Price.png">
+          </a> 
+          <div class="col-6">SALE PRICE was highly right skewed. So, we log transform it so that it give a better results.</div>
+          <a class="center">
+            <img src="static/images/Boxplot_of_Sale_Price_limited.png">
+          </a>
+          <div class="col-6">Sale Price Distribution by Building Age</div>
+          <a class="center">
+            <img src="static/images/Sale_Price_Distribution_by_Building_Age.png">
+          </a>
+          <div class="col-6">Gross Square (Net Usable Area + Structural Space) Feet vs Sale Price</div>
+          <a class="center">
+            <img src="static/images/GROSS_SQUARE_FEET_vs_Sale.png">
+          </a>
+          <div class="col-6">Gross Square feet vs Sale linear regression model fit</div>
+          <a class="center">
+            <img src="static/images/GROSS_SQUARE_FEET_vs_Sale_reg.png">
+          </a>  
+          <div class="col-6">Land Square Feet vs Sale Price</div>
+          <a class="center">
+            <img src="static/images/LAND_SQUARE_FEET_vs_Sale.png">
+          </a>
+          <div class="col-6">Land Square feet vs Sale linear regression model fit</div>
+          <a class="center">
+            <img src="static/images/LAND_SQUARE_FEET_vs_Sale_reg.png">
+          </a> 
+          <div class="col-6">Gross Square feet vs Sale per Borough(1. Manhattan, 2. Brooklyn, 3. Queens, 4. The Bronx, 5. Staten Island)</div>
+          <a class="center">
+            <img src="static/images/GROSS_SQUARE_FEET_vs_Sale_per_Borough.png">
+          </a>
+          <div class="col-6">Total Units vs Sale Price</div>
+          <a class="center">
+            <img src="static/images/Total_Unit_vs_Sale1.png">
+          </a>
+          <div class="col-6">Residential Units vs Sale Price</div>
+          <a class="center">
+            <img src="static/images/Residential_Unit_vs_Sale1.png">
+          </a>
+          <div class="col-6">Commercial Unit vs Sale</div>
+          <a class="center">
+            <img src="static/images/Commercial_Unit_vs_Sale11.png">
+          </a>
+        </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="title">TAX CLASS AT TIME OF SALE</h3>
+                <a class="float-left">
+                 <img src="static/images/Tax_class.png"> 
+                </a> 
+            </div>
+            <div class="col-6 col-md-6">
+              <h5 class="title">Borough vs Sale</h5>     
+                <a class="rounded float-right">
+                  <img src="static/images/Borough_vs_Sale.png">
+                </a> 
+          </div>
+          <div class="col-6">Buildong Class vs Sale</div>
+          <a class="center">
+            <img src="static/images/Buildong_Class_vs_Sale.png">
+          </a>
+          </div>
+          <h6> 3.Dara Pre Processing</h6>
+          <p2> Now, deleting unneccessary columns. Normalising and Transforming Numerical columns.
+            Transforming the numeric features using log(x + 1). Scaling data and then One hot encoding categorical columns.
+            Replacing categorical columns with dummies. Splitting data to Test and Train sets.</p2>
+          <h6> 4. Modelling</h6>
+          <p2> Linnear Regression ('rmse': 40956416,'score': -1668211536528774)</p2>
+          <p2> Lasso Regression ('rmse': 0.749,'score': 0.425)</p2>
+          <p2> Ridge Regression ('rmse': 0.750,'score': 0.440)</p2>
+          <p2> Random Forest Regression ('rmse': 0.580,'score': 0.664)</p2>
+          <h6> 4. Conclusion</h6>
+          <p2> Random Forest Regression has the best rmse and score!</p2>
+
+          <div class="col-6">Random data to show all the Models</div>
+          <a class="center">
+            <img src="static/images/Test_models1.png">
+          </a>
+          <div class="col-6">Plotting the feature importances of the Random Forest</div>
+          <a class="center">
+            <img src="static/images/Feature_importance_rf1.png">
+          </a>                  
+        </div>
+        </div>
+      <br>
+    </div>
+  <h2><Strong>Findings</Strong></h2>
+  <p>Random Forest Regression managed to get a rmse of 0.58 and score of 0.66 which is certainly not great but maybe not bad given the amount of cleaned data available.</p>
+    <p>BLOCK, LOT, ZIP CODE, SQUARE FEET, BUILDING AGE, and BOROUGH were the most important features determining the SALE PRICE.</p>
+    
+
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script> -->
+</body>
+
+</html>
