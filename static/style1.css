@@ -174,7 +174,7 @@ select {
   padding: 20px;
   margin: 0;
   background: #81D8D0;
-  background-image: url("../images/NY4.jpg");
+  background-image: url("../static/img/NY4.jpg");
   background-attachment: fixed;
   background-position: middle center;
   background-size: cover;
